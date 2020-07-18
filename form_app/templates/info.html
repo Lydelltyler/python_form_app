@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Info</title>
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'styles2.css' %}">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Submitted Info</h1>
+
+
+        <table id='info'>
+            <tr>
+                <td>Name:</td>
+                <td>{{name_in_form}}</td>
+            </tr>
+            <tr>
+                <td>Dojo Location:</td>
+                <td>{{location_in_form}}</td>
+            </tr>
+            <tr>
+                <td>Favorite Language:</td>
+                <td>{{language_in_form}}</td>
+            </tr>
+            <tr>
+                <td>Comment:</td>
+                <td>{{comment_in_form}}</td>
+            </tr>
+        </table>
+        <a href="/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Go Back</a>
+
+    </div>
+</body>
+
+</html>
